@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
   *p = 0;
   while(1) {
     sleep(1);
-    *p = *p + 1;
+    *p = *p + 1; // update value at memory
     printf("(%d) p: %d\n", getpid(), *p);
   }
   return 0;
