@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-  int *p = malloc(sizeof(int));
+  int *p = (int*) malloc(sizeof(int));
   printf("(%d) Address pointed to by p: %p\n", getpid(), p);
   *p = 0;
   while(1) {
